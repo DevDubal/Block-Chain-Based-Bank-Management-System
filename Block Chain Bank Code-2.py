@@ -207,8 +207,8 @@ def process_transactions(sender_account_id, receiver_account_id, amount, private
             updated_receiver_balance = receiver_balance + amount
             cursor.execute("UPDATE accounts SET balance = %s WHERE id = %s", (updated_receiver_balance, receiver_account_id))
 
-            sender_address = '0x29F0752a40978763FE4E717a56eEF7Dba9216474'
-            receiver_address = '0x7324b423E80F1856abf1C0CbA1F323056fC9CF25'
+            sender_address = 'Use your own sender address'
+            receiver_address = 'Use your own reciever address'
 
             # Add the transaction to the transaction table
             query = "INSERT INTO transactions (sender_address, receiver_address, amount, status) VALUES (%s, %s, %s, %s)"
@@ -313,3 +313,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
