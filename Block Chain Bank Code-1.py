@@ -119,7 +119,7 @@ def deposit():
         db.commit()
 
         # Execute Ethereum transaction
-        send_ethereum_transaction(account_number, amount, private_key='2ced69751e35eb9ecfaf58075eaefd195eed7e7f639e4c87b7031b84cb7d9de7')
+        send_ethereum_transaction(account_number, amount, private_key='Use Your Own Private Key')
 
         messagebox.showinfo("Success", "Deposit successful!")
     else:
@@ -142,7 +142,7 @@ def withdraw():
             db.commit()
 
             # Execute Ethereum transaction
-            send_ethereum_transaction(account_number, amount, private_key='2ced69751e35eb9ecfaf58075eaefd195eed7e7f639e4c87b7031b84cb7d9de7')
+            send_ethereum_transaction(account_number, amount, private_key='Use Your Own Private Key')
 
             messagebox.showinfo("Success", "Withdrawal successful!")
         else:
@@ -214,3 +214,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
